@@ -55,6 +55,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'drf_blog_api.urls'
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',  # Addition of this whole Object
+    ]
+}
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
