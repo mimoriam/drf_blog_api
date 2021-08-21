@@ -38,6 +38,9 @@ INSTALLED_APPS = [
 
     # Local:
     'posts',
+
+    # Custom:
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
